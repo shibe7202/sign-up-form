@@ -2,3 +2,94 @@
     margin: 0;
     padding: 0;
 }
+
+html,
+body {
+    height: 100vh;
+}
+
+:root {
+    --left-container-width: 38%;
+    --right-container-width: 62%;
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url(/home/vboxuser/Downloads/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    height: 100%;
+    margin-left: 19%;
+    margin-right: 19%;
+    position: relative
+}
+
+
+.left-container {
+    width: var(--left-container-width);
+    height: 100%;
+    background-image: url(/home/vboxuser/Downloads/halie-west-25xggax4bSA-unsplash.jpg); 
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 45%;
+    position: relative;
+}
+
+.logo-banner, .logo {
+    height: 125px;
+    width: 100%;
+    position: absolute;
+    top: 183px;
+}
+
+.logo-banner {
+    background-color: black;
+    opacity: 50%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    max-height: 86%; 
+    max-width: 86%;
+}
+
+.logo-text {
+    font-family: "Norse Bold";
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    font-size: 78px;
+}
+
+.credit {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+.credit > p {
+    width: 100%;
+    position: absolute;
+    bottom: 9px;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.right-container {
+    width: var(--right-container-width);
+    height: 100%;
+    background-color: gray;
+}
